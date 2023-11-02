@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <title>Codeup Design Project</title>
@@ -10,9 +11,10 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <img style="width: 50px; height: 50px" src="./assets/images/logo.png">
-            <a class="navbar-brand logo-1" href="#">codeup design</a>
+            <a class="navbar-brand logo-1 hidden" href="#">codeup design</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,12 +42,12 @@
                 <h2 class="bigger-two">FROM PARK CITY, UTAH</h2>
             </div>
         </div>
-        <div class="row justify-content-center align-items-start">
-            <div class="col col-lg-3 col-md-10 d-flex justify-content-center align-items-center more-space">
+        <div class="row justify-content-center align-items-start media-circles">
+            <div class="col col-lg-3 d-flex justify-content-center align-items-center more-space ">
                 <p class="red-circle">DESIGN</p>
                 <p class="orange-circle">DEVELOP</p>
             </div>
-            <div class="col col-lg-3 col-md-10 d-flex justify-content-center align-items-center more-space-two ">
+            <div class="col col-lg-3 d-flex justify-content-center align-items-center more-space-two ">
                 <p class="green-circle">SUPPORT</p>
                 <p class="blue-circle">HOST</p>
             </div>
@@ -55,57 +57,124 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col col-8d-flex flex-wrap justify-content-center">
-                <p style="margin-bottom: 150px">SELECTED WORK</p>
-
-                <ul class="d-flex">
-                    <li><img class="img-size border-img" src="./assets/images/apple-ipad.jpg" alt="apple">
-                      <div style="padding-left: 20px " class="d-flex extra-gap">
-                          FEATURED PROJECT
-                          <div class="d-flex gap-2"><span class="lil-circle-red">D</span><span class="lil-circle-orange">D</span><span class="lil-circle-green">S</span><span class="lil-circle-blue">H</span></div>
-                      </div>
-                    </li>
-                    <li><img class="img-size border-img" src="./assets/images/macbook.jpg" alt="macbook">
-                        <div style="padding-left: 20px " class="d-flex extra-gap">
-                            FEATURED PROJECT
-                            <div class="d-flex gap-2"><span class="lil-circle-red">D</span><span class="lil-circle-orange">D</span><span class="lil-circle-green">S</span><span class="lil-circle-blue">H</span></div>
+        <div class="row flex-wrap">
+            <div class="col-12 col-md-8 d-flex flex-wrap justify-content-center">
+                <p class="text-center">SELECTED WORK</p>
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex flex-column gap-2">
+                        <img src="./assets/images/apple-ipad.jpg" alt="apple-ipad" class="img-size border-img">
+                        <div class="d-flex flex-shrink-1 gap-1">
+                            <p class="d-flex flex-grow-1 align-items-end ">
+                                FEATURED PROJECT
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="pictureIcon pic-1 text-center">
+                                    <p class="lil-circle red">D</p>
+                                </div>
+                                <div class="pictureIcon pic-2 text-center">
+                                    <p class="lil-circle orange">D</p>
+                                </div>
+                                <div class="pictureIcon pic-3 text-center">
+                                    <p class="lil-circle green">S</p>
+                                </div>
+                                <div class="pictureIcon pic-4 text-center">
+                                    <p class="lil-circle blue">H</p>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-                <ul class="d-flex">
-                    <li><img class="img-size border-img"  src="./assets/images/man.jpg" alt="man">
-                        <div style="padding-left: 20px " class="d-flex extra-gap">
-                            FEATURED PROJECT
-                            <div class="d-flex gap-2"><span class="lil-circle-red">D</span><span class="lil-circle-orange">D</span><span class="lil-circle-green">S</span><span class="lil-circle-blue">H</span></div>
+                    </div>
+                    <!--                    Second IMG-->
+                    <div class="col-12 col-md-6 d-flex flex-column">
+                        <img src="./assets/images/macbook.jpg" alt="macbook" class="img-size border-img">
+                        <div class="d-flex flex-shrink-1 gap-1">
+                            <p style="padding-left: 20px; font-size:18px; " class="d-flex flex-grow-1 align-items-end">
+                                FEATURED PROJECT
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div style="padding-right: 10px" class="pictureIcon pic-1 text-center">
+                                    <p class="lil-circle-red">D</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-2 text-center">
+                                    <p class="lil-circle-orange">D</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-3 text-center">
+                                    <p class="lil-circle-green">S</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-4 text-center">
+                                    <p class="lil-circle-blue">H</p>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li><img  class="img-size border-img" src="./assets/images/security.jpg" alt="security">
-                        <div style="padding-left: 20px " class="d-flex extra-gap">
-                            FEATURED PROJECT
-                            <div class="d-flex gap-2"><span class="lil-circle-red">D</span><span class="lil-circle-orange">D</span><span class="lil-circle-green">S</span><span class="lil-circle-blue">H</span></div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column ">
+                        <img src="./assets/images/man.jpg" alt="apple-ipad" class="img-size border-img">
+                        <div class="d-flex flex-shrink-1 gap-1">
+                            <p style="padding-left: 20px; font-size: 18px" class="d-flex flex-grow-1 align-items-end ">
+                                FEATURED PROJECT
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div style="padding-right: 10px" class="pictureIcon pic-1 text-center">
+                                    <p class="lil-circle-red">D</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-2 text-center">
+                                    <p class="lil-circle-orange">D</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-3 text-center">
+                                    <p class="lil-circle-green">S</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-4 text-center">
+                                    <p class="lil-circle-blue">H</p>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                    <!--                    Second IMG-->
+                    <div class="col-12 col-md-6 d-flex flex-column">
+                        <img src="./assets/images/security.jpg" alt="macbook" class="img-size border-img">
+                        <div class="d-flex flex-shrink-1 gap-1">
+                            <p style="padding-left: 20px; font-size: 18px" class="d-flex flex-grow-1 align-items-end">
+                                FEATURED PROJECT
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div style="padding-right: 10px" class="pictureIcon pic-1 text-center">
+                                    <p class="lil-circle-red">D</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-2 text-center">
+                                    <p class="lil-circle-orange">D</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-3 text-center">
+                                    <p class="lil-circle-green">S</p>
+                                </div>
+                                <div style="padding-right: 10px" class="pictureIcon pic-4 text-center">
+                                    <p class="lil-circle-blue">H</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!--                IMG ROW 1 end-->
+            <!--                IMG ROW 1 end-->
             <!--     media query this           -->
-            <div class="col col-4 d-flex flex-column extra-extra-space-two ">
+            <div class="col-12 col-md-4 d-flex flex-column extra-extra-space-two hide hidden">
                 <p style="font-size: 18px" class="text-center para-2">The Last</p>
                 <div class="d-flex flex-column extra-extra-space text-start">
                     <div class="d-flex gap-4">
-                    <img class="img-size-two" src="./assets/images/mobile-phone.jpg" alt="phone">
-                    <p class="font-size-two d-flex flex-wrap">THE ADMIN BAR AND ABSOLUTE POSITIONING</p>
+                        <img class="img-size-two" src="./assets/images/mobile-phone.jpg" alt="phone">
+                        <p class="font-size-two d-flex flex-wrap">THE ADMIN BAR AND ABSOLUTE POSITIONING</p>
                     </div>
                     <div class="d-flex gap-4">
-                        <img class="img-size-two" src="./assets/images/head.jpg" alt="head">
+                        <img class="img-size-two " src="./assets/images/head.jpg" alt="head">
                         <p class="font-size-two">NIBBLER AWESOME WEBSITE TESTING</p>
                     </div>
                     <div class="d-flex gap-4">
                         <img class="img-size-two" src="./assets/images/ipad.jpg" alt="ipad">
-                    <p class="font-size-two">HOW TO GET GOOGLE TO LIKE YOU</p>
+                        <p class="font-size-two">HOW TO GET GOOGLE TO LIKE YOU</p>
                     </div>
-                    <div style="font-size: 18px">LAST Tweet</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, amet animi aperiam consequuntur eveniet fugiat fugit hic id neque nulla praesentium quo repellat tenetur! Excepturi harum hic impedit officiis sunt.</p>
+                    <div style="font-size: 18px; margin-top: 30px;">LAST Tweet</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, amet animi aperiam
+                        consequuntur eveniet fugiat fugit hic id neque nulla praesentium quo repellat tenetur! Excepturi
+                        harum hic impedit officiis sunt.</p>
                 </div>
 
             </div>
@@ -114,21 +183,47 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 </html>
 
 
-
 <!--media query title, images, circles-->
+
+
+<!--<div class="col col-8 d-flex flex-wrap justify-content-center">-->
+<!--    <p style="margin-bottom: 150px" class="media-center text-center">SELECTED WORK</p>-->
+<!--    <div class="d-flex">-->
+<!--        <div class="d-flex flex-column no-pad">-->
+<!--            <img class="img-size border-img change-size" src="./assets/images/apple-ipad.jpg" alt="apple">-->
+<!--            <div style="padding-left: 20px " class="d-flex extra-gap change-size-two">-->
+<!--                FEATURED PROJECT-->
+<!--                <div class="d-flex gap-2"><span class="lil-circle-red">D</span><span class="lil-circle-orange">D</span><span class="lil-circle-green">S</span><span class="lil-circle-blue">H</span></div>-->
+<!--            </div>-->
+
+<!--            <img class="img-size border-img change-size" src="./assets/images/macbook.jpg" alt="macbook">-->
+<!--            <div style="padding-left: 20px " class="d-flex extra-gap change-size-two">-->
+<!--                FEATURED PROJECT-->
+<!--                <div class="d-flex gap-2"><span class="lil-circle-red">D</span><span class="lil-circle-orange">D</span><span class="lil-circle-green">S</span><span class="lil-circle-blue">H</span></div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--    <ul class="d-flex do-not-need">-->
+<!--        <li><img class="img-size border-img change-size"  src="./assets/images/man.jpg" alt="man">-->
+<!--            <div style="padding-left: 20px " class="d-flex extra-gap change-size-two">-->
+<!--                FEATURED PROJECT-->
+<!--                <div class="d-flex gap-2"><span class="lil-circle-red">D</span><span class="lil-circle-orange">D</span><span class="lil-circle-green">S</span><span class="lil-circle-blue">H</span></div>-->
+<!--            </div>-->
+<!--        </li>-->
+<!--        <li><img  class="img-size border-img change-size" src="./assets/images/security.jpg" alt="security">-->
+<!--            <div style="padding-left: 20px " class="d-flex extra-gap change-size-two">-->
+<!--                FEATURED PROJECT-->
+<!--                <div class="d-flex gap-2"><span class="lil-circle-red">D</span><span class="lil-circle-orange">D</span><span class="lil-circle-green">S</span><span class="lil-circle-blue">H</span></div>-->
+<!--            </div>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</div>-->

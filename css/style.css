@@ -132,11 +132,11 @@ h2{
 /*this was for the 4 images*/
 
 .img-size{
-    width: 390px;
-    height: 280px;
+    width: 100%;
+    aspect-ratio: 295/203;
+    object-fit: cover;
 }
 .border-img {
-    margin: 10px;
     border:10px solid var(--grey); ;
 
 }
@@ -144,57 +144,28 @@ h2{
 .padding {
     padding-left: 20px;
 }
-.lil-circle-red {
+.lil-circle {
+    color: black;
+    aspect-ratio: 1/1;
+    font-size: 12px;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    width: 20px;
+    padding-top: 2px;
+
+}
+.lil-circle.red {
     background-color: var(--light-red);
-    color: black;
-    aspect-ratio: 1/1;
-    font-size: 18px;
-    font-family: "Anton", sans-serif;
-    text-align: center;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding-top: 2px;
-
 }
-.lil-circle-orange {
+.lil-circle.orange {
     background-color: var(--orange);
-    color: black;
-    aspect-ratio: 1/1;
-    font-size: 18px;
-    font-family: "Anton", sans-serif;
-    text-align: center;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding-top: 2px;
-
 }
-.lil-circle-blue {
+.lil-circle.blue {
     background-color: var(--light-blue);
-    color: black;
-    aspect-ratio: 1/1;
-    font-size: 18px;
-    font-family: "Anton", sans-serif;
-    text-align: center;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding-top: 2px;
-
 }
-.lil-circle-green {
+.lil-circle.green {
     background-color: var(--light-green);
-    color: black;
-    aspect-ratio: 1/1;
-    font-size: 18px;
-    font-family: "Anton", sans-serif;
-    text-align: center;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding-top: 2px;
-
 }
 
 .extra-gap{
@@ -208,7 +179,8 @@ h2{
     height: 100px;
 }
 .font-size-two {
-    font-size: 40px;
+    font-size: 25px;
+    line-height: 1;
     font-family: "Anton", sans-serif;
     text-align: start;
 
@@ -217,7 +189,160 @@ h2{
     gap: 10px;
 }
 .extra-extra-space-two{
-    gap: 140px;
+}
+@media  screen and (min-width: 500px) and (max-width: 1179px) {
+    .media-circles {
+        display: flex;
+        gap: 80px;
+        justify-content: space-evenly;
+
+    }
+
+    .media-center{
+        text-align: center;
+    }
+
+    .red-circle {
+        background-color: var(--light-red);
+        color: white;
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        padding-top: 30px;
+        border: 8px solid white;
+    }
+    .orange-circle{
+        background-color: var(--orange);
+        color: white;
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        padding-top: 30px;
+        border: 8px solid white;
+    }
+    .green-circle {
+        background-color: var(--light-green);
+        color: white;
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        padding-top: 30px;
+        border: 8px solid white;
+    }
+    .blue-circle {
+        background-color: var(--light-blue);
+        color: white;
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        padding-top: 30px;
+        border: 8px solid white;
+
+    }
+}
+@media screem and (min-width:992px ) and (max-width: 1119px) {
+
+}
+@media  screen and (min-width: 768px) and (max-width: 991px) {
+.media-circles {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+}
+
+@media  screen and (min-width: 320px) and (max-width: 991px) {
+    .hidden {
+        display: none;
+        visibility: hidden;
+    }
+    .do-not-need{
+        display: none;
+        flex: none;
+    }
+    .media-circles {
+        gap: unset;
+    }
+    .change-size {
+        width: 300px;
+        height: 300px;
+    }
+    .change-size-two {
+        width: 80px;
+        height: 80px;
+        gap: 60px;
+    }
+
+  
+
+
+    .red-circle {
+        background-color: var(--light-red);
+        color: white;
+        aspect-ratio: 1/1;
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        padding-top: 30px;
+        border: 8px solid white;
+    }
+
+    .orange-circle {
+        background-color: var(--orange);
+        color: white;
+        aspect-ratio: 1/1;
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        padding-top: 30px;
+        border: 8px solid white;
+    }
+
+    .green-circle {
+        background-color: var(--light-green);
+        color: white;
+        aspect-ratio: 1/1;
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        padding-top: 30px;
+        border: 8px solid white;
+    }
+
+    .blue-circle {
+        background-color: var(--light-blue);
+        color: white;
+        aspect-ratio: 1/1;
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        padding-top: 30px;
+        border: 8px solid white;
+
+    }
 }
 
 
