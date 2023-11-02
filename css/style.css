@@ -197,7 +197,28 @@ h2{
 
 }
 
+.extra-gap{
+    gap: 110px;
+}
+.para{
+    margin-bottom: 50px ;
+}
+.img-size-two {
+    width: 100px;
+    height: 100px;
+}
+.font-size-two {
+    font-size: 40px;
+    font-family: "Anton", sans-serif;
+    text-align: start;
 
+}
+.extra-extra-space{
+    gap: 10px;
+}
+.extra-extra-space-two{
+    gap: 140px;
+}
 
 
 
