@@ -1,7 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css") layer(framework);
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
 
-/* Colors -------------------------------*/
 :root {
     --light-red: #E6563B;
     --orange: #EB9D3A;
@@ -20,7 +19,7 @@ body{
     flex-direction: column;
     min-height: 100dvh;
 }
-/*Using this to see my columns-----------------*/
+
 /*.col-12{*/
 /*    min-height: 100px;*/
 /*    border: 1px solid blue;*/
@@ -29,8 +28,6 @@ body{
 /*    min-height: 100px;*/
 /*    border: 1px solid blue;*/
 /*}*/
-
-/*Changing the elements*/
 
 ul{
     list-style: none;
@@ -42,25 +39,20 @@ h2{
     font-family: "Anton", sans-serif;
 }
 
-
-/*Class for the logo on the Nav Bar--------------*/
 .logo-1 {
     margin-left: 15px;
     margin-right: 40px;
     font-size: 25px;
 }
 
-/*This is for the ul font size on the nav bar*/
 .font-1 {
     font-size: 15px;
 }
-
-/*On the H1 header that says "visual design"*/
 .bigger {
     text-align: center;
     font-size: 52px;
 }
-/*this is for the circles*/
+
 .red-circle {
     background-color: var(--light-red);
     color: white;
@@ -74,6 +66,7 @@ h2{
     padding-top: 30px;
     border: 8px solid white;
 }
+
 .orange-circle{
     background-color: var(--orange);
     color: white;
@@ -193,8 +186,10 @@ h2{
 @media  screen and (min-width: 500px) and (max-width: 1179px) {
     .media-circles {
         display: flex;
-        gap: 80px;
+        gap: unset;
         justify-content: space-evenly;
+        padding-left: 40px;
+        padding-right: 40px;
 
     }
 
@@ -254,10 +249,39 @@ h2{
 }
 
 
-@media  screen and (min-width: 768px) and (max-width: 991px) {
+
+@media  screen and (min-width: 1200px) and (max-width: 1399px){
+    .media-circles {
+        gap: 38px;
+    }
+
+}
+
+@media  screen and (min-width: 992px) and (max-width: 1199px) {
+.more-space {
+    padding-right: 95px;
+}
+.more-space-two{
+    padding-left: 95px;
+}
+
+    @media  screen and (min-width: 995px) and (max-width: 1179px){
+        .more-space {
+            padding-right: 110px;
+        }
+        .more-space-two{
+            padding-left: 110px;
+        }
+
+    }
+
+
+    @media  screen and (min-width: 768px) and (max-width: 991px) {
 .media-circles {
     padding-left: 40px;
     padding-right: 40px;
+
+}
  .hide-it {
      display: none;
      visibility: hidden;
